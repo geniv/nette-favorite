@@ -42,6 +42,11 @@ protected function createComponentFavorite(Favorite $favorite): Favorite
 }
 ```
 
+check status:
+```php
+$favorite->isFavorite($id);
+```
+
 latte usage:
 ```latte
 {control favorite $item['id']}
